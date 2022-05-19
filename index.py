@@ -24,5 +24,14 @@ def vigenere(inpx = str  , intx = str  , crypt = bool , space = '') -> str  :
     if crypt == False : 
         return space.join([ string.ascii_lowercase[ (inp - int) % 26 ] for inp , int in zip([ string.ascii_letters.index(x) for x in inpx  ] , [string.ascii_letters.index(x) for x in intx])])
     
-    
+# True to crypt  
 print(vigenere('hicham' , 'rahab' , True))
+# False to decrypt 
+print(vigenere('yijhbd' , 'rahab' , False))
+# True to crypt
+print(ceasar('rahab' , 2 , True))
+# False to decrypt 
+print(ceasar('tcjcd' , 2 , False))
+# Key of crypt 
+print(chiperCeasar("tcjcd"))
+
