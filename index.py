@@ -25,13 +25,13 @@ def vigenere(inpx = str  , intx = str  , crypt = bool , space = '') -> str  :
         return space.join([ string.ascii_lowercase[ (inp - int) % 26 ] for inp , int in zip([ string.ascii_letters.index(x) for x in inpx  ] , [string.ascii_letters.index(x) for x in intx])])
     
 # True to crypt  
-print(vigenere('hicham' , 'rahab' , True))
+print(vigenere('text' , 'chiper' , True))
 # False to decrypt 
-print(vigenere('yijhbd' , 'rahab' , False))
+print(vigenere('text' , 'chiper' , False))
 # True to crypt
-print(ceasar('rahab' , 2 , True))
+print(ceasar('text' , 2 , True))
 # False to decrypt 
-print(ceasar('tcjcd' , 2 , False))
+print(ceasar('text' , 2 , False))
 # Key of crypt 
-print(chiperCeasar("tcjcd"))
+print(chiperCeasar("text"))
 
